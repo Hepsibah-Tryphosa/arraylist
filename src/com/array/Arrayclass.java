@@ -1,24 +1,27 @@
 
 package com.array;
 
-public class Arrayclass {
+public class ArrayClass {
 
     public static void main(String[] args) {
         int[] marks = { 11, 12, 40, 14, 15, 26 };
+        // marks = { 11, 12, 55, 40, 14, 15};
         Student student = new Student("sweety", marks);
+        // marks={20,30};
+
+        int[] newMarks = new int[marks.length + 1];
 
         int numOfMark = student.getNumOfMarks();
         int sum = student.getTotalSumOfMarks();
         int maximum = student.getMaxNumOfMarks();
         int minimum = student.getMinimumMarks();
-        int average=student.getAvgMarks();
+        int average = student.getAvgMarks();
         System.out.println(numOfMark);
         System.out.println(sum);
         System.out.println(maximum);
         System.out.println(minimum);
         System.out.println(average);
 
-        
         System.out.println(marks[0]);
         System.out.println(marks[1]);
         System.out.println(marks[2]);
